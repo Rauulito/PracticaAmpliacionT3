@@ -20,34 +20,22 @@ def compareTriplets(a, b):
     PutuacionLucia=0
 #Creamos matriz donde resolveremos el resultado
     MatrizResultado= np.array([PuntuacionCarlos,PutuacionLucia])
-    if a[0]<b[0]:
-        PuntuacionCarlos= PuntuacionCarlos + 1
-    if a[0]>b[0]:
-        PuntuacionLucia= PuntuacionLucia + 1
-    else:
-        print("Ls puntuaciones no varian en esta comparacion porque tienen los mismos puntos")
-
-    if a[1]<b[1]:
+    i=0
+    while(i<len(a)):
+        if a[i]<b[i]:
             PuntuacionCarlos= PuntuacionCarlos + 1
-    if a[1]>b[1]:
-        PuntuacionLucia= PuntuacionLucia + 1
-    else:
-        print("Ls puntuaciones no varian en esta comparacion porque tienen los mismos puntos")
-
-    if a[2]<b[2]:
-            PuntuacionCarlos= PuntuacionCarlos + 1
-    if a[2]>b[2]:
-        PuntuacionLucia= PuntuacionLucia + 1
-    else:
-        print("Ls puntuaciones no varian en esta comparacion porque tienen los mismos puntos")
-
-    return MatrizResultado
+        if a[i]>b[i]:
+            PuntuacionLucia= PutuacionLucia + 1
+        else:
+            print("Ls puntuaciones no varian en esta comparacion porque tienen los mismos puntos")
+        i=i+1
+        return MatrizResultado
 
 if __name__ == '__main__':
-fptr = open(os.environ['OUTPUT_PATH'], 'w')
-a = list(map(int, input().rstrip().split()))
-b = list(map(int, input().rstrip().split()))
-result = compareTriplets(a, b)
-fptr.write(' '.join(map(str, result)))
-fptr.write('\n')
-fptr.close()
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    a = list(map(int, input().rstrip().split()))
+    b = list(map(int, input().rstrip().split()))
+    result = compareTriplets(a, b)
+    fptr.write(' '.join(map(str, result)))
+    fptr.write('\n')
+    fptr.close()
