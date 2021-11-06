@@ -27,8 +27,7 @@ def compareTriplets(a, b):
         if a[i]>b[i]:
             puntuacionLucia= putuacionLucia + 1
         i=i+1
-    print(puntuacionCarlos)
-    matrizResultante= np.array([puntuacionCarlos,puntuacionLucia])
+    matrizResultante= np.array([puntuacionLucia,puntuacionCarlos])
     return matrizResultante
 #Probamos que funcione
 a=np.array([3,8,6])
