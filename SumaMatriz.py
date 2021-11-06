@@ -16,7 +16,7 @@ def simpleArraySum(ar):
     return sumaTotal
 
 #creamos  una matriz
-matriz=np.array([1,4,6],[5,9,1],[3,7,9])
+matriz=np.array([[1,4,6],[5,9,1],[3,7,9]])
 print("La suma de los elementos de la matriz es:")
 simpleArraySum(matriz)
 
