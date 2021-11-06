@@ -30,6 +30,12 @@ def compareTriplets(a, b):
             print("Ls puntuaciones no varian en esta comparacion porque tienen los mismos puntos")
         i=i+1
         return MatrizResultado
+#Probamos que funcione
+a=np.array([3,8,6])
+b=np.array([5,7,6])
+print("La matriz de retorno de la puntuación de Lucia y de Carlos es:")
+print(compareTriplets(a,b))
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
