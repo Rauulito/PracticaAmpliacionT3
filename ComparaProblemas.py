@@ -14,22 +14,22 @@ import numpy as np
 # 2. INTEGER_ARRAY b
 #
 def compareTriplets(a, b):
-# Write your code here
+    # Write your code here
 #Creamos variables para guardar las puntuaciones de Carlos y Lucia
-    PuntuacionCarlos=0
-    PutuacionLucia=0
+    puntuacionCarlos=0
+    putuacionLucia=0
 #Creamos matriz donde resolveremos el resultado
-    MatrizResultado= np.array([PuntuacionCarlos,PutuacionLucia])
+
     i=0
     while(i<len(a)):
         if a[i]<b[i]:
-            PuntuacionCarlos= PuntuacionCarlos + 1
+            puntuacionCarlos= puntuacionCarlos + 1
         if a[i]>b[i]:
-            PuntuacionLucia= PutuacionLucia + 1
-        else:
-            print("Ls puntuaciones no varian en esta comparacion porque tienen los mismos puntos")
+            puntuacionLucia= putuacionLucia + 1
         i=i+1
-        return MatrizResultado
+    print(puntuacionCarlos)
+    matrizResultante= np.array([puntuacionCarlos,puntuacionLucia])
+    return matrizResultante
 #Probamos que funcione
 a=np.array([3,8,6])
 b=np.array([5,7,6])
