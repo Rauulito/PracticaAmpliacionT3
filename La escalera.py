@@ -10,11 +10,11 @@ import numpy as np
 # The function accepts INTEGER n as parameter.
 #
 def staircase(n):
-# Write your code here
+    # Write your code here
     for i in range(n):
         i=i+1
         print(i*'#')
-#Lo probamos
+#Probamos que funcione
 staircase(6)
 
 if __name__ == '__main__':

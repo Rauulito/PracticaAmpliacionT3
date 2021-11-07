@@ -8,7 +8,8 @@ import sys
 #
 # The function is expected to return a STRING.
 # The function accepts INTEGER n as parameter.
-#
+
+#Creameremos un metodo para ver cual es la jugada buena y asi poder ver rapidamente si el gandor es P1 o P2
 def gameOfStones(n):
 # Write your code here
 
