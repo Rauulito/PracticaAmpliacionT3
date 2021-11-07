@@ -4,6 +4,7 @@ import os
 import random
 import re
 import sys
+import numpy as np
 
 #
 # Complete the 'gradingStudents' function below.
@@ -13,7 +14,16 @@ import sys
 
 def gradingStudents(grades):
 # Write your code here
-
+    i=0
+    if(grades[i]<40):
+        grades[i]
+    if(grades[i]+2 % 5 == 0):
+        grades[i]=grades[i]+2
+    if(grades[i]+1 % 5 == 0):
+            grades[i]=grades[i]+1
+    else:
+        grades[i]
+    return grades
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
     grades_count = int(input().strip())
