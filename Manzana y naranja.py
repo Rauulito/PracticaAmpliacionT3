@@ -4,6 +4,7 @@ import os
 import random
 import re
 import sys
+import numpy as np
 #
 # Complete the 'countApplesAndOranges' function below.
 #
