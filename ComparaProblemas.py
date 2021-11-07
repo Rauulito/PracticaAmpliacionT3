@@ -34,7 +34,7 @@ def compareTriplets(a, b):
 
 #Probamos que funcione
 a=np.array([3,8,6])
-b=np.array([2,4,5])
+b=np.array([4,9,5])
 print(len(a))
 print("La matriz de retorno de la puntuación de Lucia y de Carlos es:")
 print(compareTriplets(a,b))
