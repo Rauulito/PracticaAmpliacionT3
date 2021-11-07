@@ -61,4 +61,4 @@ if __name__ == '__main__':
     n = int(third_multiple_input[1])
     apples = list(map(int, input().rstrip().split()))
     oranges = list(map(int, input().rstrip().split()))
-    countApplesAndOranges(s, t, a, b, apples, oranges
+    countApplesAndOranges(s, t, a, b, apples, oranges)
