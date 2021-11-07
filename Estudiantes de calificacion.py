@@ -23,7 +23,7 @@ def gradingStudents(grades):
         i=i+1
     return grades
 #Probamamos
-grades= np.array([38,48,49])
+grades= np.array([37,48,49])
 print(gradingStudents(grades))
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
