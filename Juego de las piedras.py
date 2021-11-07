@@ -20,11 +20,15 @@ def jugadaPerfecta(n):
     if(modulo==5 or modulo==6):
         piedrasExtraidas=5
     return piedrasExtraidas
+
 def gameOfStones(n):
     if(jugadaPerfecta(n) != 0):
         print("P1 es el ganador")
     else:
         print("P2 es el ganador")
+
+#Probamos que funcione
+gameOfStones(9)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
