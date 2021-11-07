@@ -14,6 +14,7 @@ def staircase(n):
     for i in range(n):
         i=i+1
         print(i*'#')
+        print("\n")
 #Probamos que funcione
 staircase(6)
 
