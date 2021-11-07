@@ -18,7 +18,6 @@ def compareTriplets(a, b):
 #Creamos variables para guardar las puntuaciones de Carlos y Lucia
     puntuacionCarlos=0
     putuacionLucia=0
-#Creamos matriz donde resolveremos el resultado
 
     i=0
     while(i<len(a)):
@@ -27,14 +26,18 @@ def compareTriplets(a, b):
         if a[i]>b[i]:
             puntuacionLucia= putuacionLucia + 1
         i=i+1
+
+    print(puntuacionCarlos)
+    print(puntuacionLucia)
     matrizResultante= np.array([puntuacionLucia,puntuacionCarlos])
     return matrizResultante
+
 #Probamos que funcione
 a=np.array([3,8,6])
-b=np.array([5,7,6])
+b=np.array([2,4,5])
+print(len(a))
 print("La matriz de retorno de la puntuación de Lucia y de Carlos es:")
 print(compareTriplets(a,b))
-
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
