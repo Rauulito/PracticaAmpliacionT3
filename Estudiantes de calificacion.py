@@ -13,17 +13,18 @@ import numpy as np
 #
 
 def gradingStudents(grades):
-# Write your code here
+    # Write your code here
     i=0
-    if(grades[i]<40):
-        grades[i]
-    if(grades[i]+2 % 5 == 0):
-        grades[i]=grades[i]+2
-    if(grades[i]+1 % 5 == 0):
+    while(i<len(grades)):
+        if((grades[i]+2) % 5 == 0 and grades[i]>= 40):
+            grades[i]=grades[i]+2
+        if((grades[i]+1) % 5 == 0 and grades[i]>=40):
             grades[i]=grades[i]+1
-    else:
-        grades[i]
+        i=i+1
     return grades
+#Probamamos
+grades= np.array([38,48,49])
+print(gradingStudents(grades))
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
     grades_count = int(input().strip())
